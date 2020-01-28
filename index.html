@@ -6,13 +6,17 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 
-
-
+<!-- das style tag erlaubt CSS in HTML zu schreiben. im header. Das hinzugefügte style Element im HTML schlägt das allgemeine stylesheet oben drüber (unten schlägt oben)-->
+<style>
+#brigitte{
+  background-color: aqua;
+}
+</style>
 
   </head>
   <body>
     <div class="huber">
-      <div id="lisa"></div>
+      <div id="lisa" class="meier"></div>
       <div id="georg"></div>
       <div id="susi"></div>
     </div>
@@ -20,7 +24,8 @@
     <div class="meier">
       <div id="sepp"></div>
       <div id="luis"></div>
-      <div id="brigitte"></div>
+      <div id="brigitte"style="background:pink !important;"></div>
     </div>
+    <!--Leerzeichen plus !important angehängt schlägt das leerzeichen+!important angehängt im CSS stylesheet für Brigitte-->
   </body>
 </html>

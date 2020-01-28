@@ -8,3 +8,33 @@ div{
   border: 1px solid black;
   margin: 5px;
 }
+
+.huber{
+background-color: pink;
+}
+.meier{
+  background-color: blue;
+}
+#lisa{
+  background-color:#630303;
+}
+#lisa.meier{
+  background-color: green;
+}
+div#lisa.meier{background-color: red;}
+#sepp{
+  background-color: green;
+}
+.huber #lisa.meier{
+  background-color: black;
+}
+div.huber #lisa.meier{
+  background-color:yellow;
+}
+body div.huber #lisa.meier{
+  background-color: blueviolet;
+}
+/* Leerzeichen plus !important angehängt schlägt den extra eingefügten <style> im HTML head.*/
+#brigitte{
+  background-color: coral !important;
+}
